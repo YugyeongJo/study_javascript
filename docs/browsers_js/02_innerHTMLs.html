@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formats</title>
+</head>
+
+<body>
+    <div id="first_id">
+        <h3>Firtst ID</h3>
+    </div>
+</body>
+<script>
+    // id를 select 해주기
+    let messages = `Second ID with javascript!`
+    messages
+    // 'Second ID with javascript!'
+    let first_id = document.querySelector("#first_id")
+    first_id
+        // < div id = "first_id" > <h3>​Firtst ID​</h3>​</div >​
+
+
+    // id를 select해서 태그 변경해주기
+    first_id.innerHTML = messages
+    // 'Second ID with javascript!'
+    first_id.innerHTML = `<h1>${messages}</h1>`
+    // '<h1>Second ID with javascript!</h1>'
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Customer CSS commons.css -->
+    <link rel="stylesheet" href="../css/commons.css">
+</head>
+
+<body>
+    <nav class="container"> nav </nav>
+
+    <main class="container">
+        <h2>Basic Table</h2>
+        <table class="table table-hover table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="table01">
+                    <td id="firstname_01">John</td>
+                    <td id="lastname_01">Doe</td>
+                    <td id="email_01">john@example.com</td>
+                </tr>
+                <tr id="table02">
+                    <td id="firstname_02">Mary</td>
+                    <td id="lastname_02">Moe</td>
+                    <td id="email_02">mary@example.com</td>
+                </tr>
+                <tr id="table03">
+                    <td id="firstname_03">July</td>
+                    <td id="lastname_02">Dooley</td>
+                    <td id="email_03">july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="container"> footer </footer>
+</body>
+
+<script>
+    let table01 = document.querySelector("#table01")
+    let table02 = document.querySelector("#table02")
+    let table03 = document.querySelector("#table03")
+    let firstname_01 = document.querySelector("#firstname_01")
+    let firstname_02 = document.querySelector("#firstname_02")
+    let firstname_03 = document.querySelector("#firstname_03")
+    let lastname_01 = document.querySelector("#lastname_01")
+    let lastname_02 = document.querySelector("#lastname_02")
+    let lastname_03 = document.querySelector("#lastname_03")
+    let email_01 = document.querySelector("#email_01")
+    let email_02 = document.querySelector("#email_02")
+    let email_03 = document.querySelector("#email_03")
+
+    table03.innerHTML = ""
+    firstname_02.innerHTML = `<td>CoCo</td>`
+    lastname_02.innerHTML = `<td>Lab</td>`
+    email_02.innerHTML = `<td>coco@cocolab.com</td>`
+</script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
