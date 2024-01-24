@@ -1,7 +1,7 @@
 // from data.go.kr with ad_count_by_times
 let ad_count_site = document.querySelector("#list_up");
 list_up.addEventListener('click', async (event) => {
-    let url = `https://apis.data.go.kr/B552898/ad_count_by_times/getAdCountByTimesList?serviceKey=kv5KjSGpridc7Ai%2BQIqvr%2B8jzmgkmfQeM5XqJO8xL1Gvknk7KLsDU4lwEaZpY0taxMMY5QKaZGq3QUopmUOYVg%3D%3D&pageNo=1&numOfRows=10`;
+    let url = `https://apis.data.go.kr/B552898/ad_count_by_times/getAdCountByTimesList?serviceKey=kv5KjSGpridc7Ai%2BQIqvr%2B8jzmgkmfQeM5XqJO8xL1Gvknk7KLsDU4lwEaZpY0taxMMY5QKaZGq3QUopmUOYVg%3D%3D&pageNo=1&numOfRows=50`;
     let options = {};
     try {
         let response = await fetch(url, options);
